@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('employer.urls'))
 ]
 
 if settings.DEBUG: # При включенном режиме дебаггинга будет работать утилита
